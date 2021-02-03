@@ -14,7 +14,7 @@ namespace SchoolLibrary.Domain.Context
             Database.SetInitializer<DatabaseContext>(new CreateDatabaseIfNotExists<DatabaseContext>());
 
             // remove this line before going into production
-            Database.SetInitializer<DatabaseContext>(new DropCreateDatabaseIfModelChanges<DatabaseContext>());
+            // Database.SetInitializer<DatabaseContext>(new DropCreateDatabaseIfModelChanges<DatabaseContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
